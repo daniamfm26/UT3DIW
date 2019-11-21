@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "mifuente";
+  src: url("../fonts/Calistoga-Regular.ttf");
+}
+/*Variable en sass*/
+div {
+  width: 80%;
+  min-height: 400px;
+  background-color: azure;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px black solid;
+}
+div .cajaroja {
+  width: 60%;
+  min-height: 200px;
+  background-color: red;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Courier New", Courier, monospace;
+  /*Utilizacion de la variable anteriormente declarada*/
+}
+
+.parrafo {
+  font-family: mifuente;
+  text-align: center;
+}
+
+/*# sourceMappingURL=HojaEstilo1.css.map */
