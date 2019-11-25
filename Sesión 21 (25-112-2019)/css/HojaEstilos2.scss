@@ -8,3 +8,29 @@ body{
      establecer la familia de fuentes y el tamaño*/
     color: $colorprincipal;
 }
+
+
+.contenedor{
+    margin-top: 50px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid blue 1px;
+    box-sizing: border-box;
+    display: flow-root;/*A pesar de no darle
+    altura al contenedor permite que este de 
+    adecue a los elementos[flotantes] que contiene*/
+}
+article[role="main"]{
+    float: left;
+    width: 600px / 960px * 100%;
+    min-height: 400px;
+    background-color: olive;
+}
+
+aside[role="complementary"]{
+    float: right;
+    width: 360px / 960px * 100%;
+    min-height: 400px;
+    background-color: red;
+}

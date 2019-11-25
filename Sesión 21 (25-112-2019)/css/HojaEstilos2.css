@@ -13,4 +13,31 @@ body {
   color: #bb3939;
 }
 
+.contenedor {
+  margin-top: 50px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid blue 1px;
+  box-sizing: border-box;
+  display: flow-root;
+  /*A pesar de no darle
+  altura al contenedor permite que este de 
+  adecue a los elementos[flotantes] que contiene*/
+}
+
+article[role=main] {
+  float: left;
+  width: 62.5%;
+  min-height: 400px;
+  background-color: olive;
+}
+
+aside[role=complementary] {
+  float: right;
+  width: 37.5%;
+  min-height: 400px;
+  background-color: red;
+}
+
 /*# sourceMappingURL=hojaestilos2.css.map */
