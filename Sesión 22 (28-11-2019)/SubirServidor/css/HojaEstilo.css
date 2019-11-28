@@ -1,0 +1,53 @@
+.capaborderradius3__texto1, .capaborderradius2__texto1, .capaborderradius1__texto1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: underline blueviolet;
+  font-size: 1.5rem;
+}
+
+.capaborderradius1 {
+  -webkit-boder-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  width: 33.3333333333%;
+  /*width: 300px / 900px * 100%*/
+  min-height: 400px;
+  float: left;
+  box-sizing: border-box;
+  border: 1px solid blue;
+}
+.capaborderradius1:hover {
+  background-color: red;
+}
+.capaborderradius2 {
+  -webkit-boder-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  border-radius: 6px;
+  width: 33.3333333333%;
+  /*width: 300px / 900px * 100%*/
+  min-height: 400px;
+  float: left;
+  box-sizing: border-box;
+  border: 1px solid green;
+}
+.capaborderradius2:hover {
+  background-color: violet;
+}
+.capaborderradius3 {
+  -webkit-boder-radius: 9px;
+  -moz-border-radius: 9px;
+  -ms-border-radius: 9px;
+  border-radius: 9px;
+  width: 33.3333333333%;
+  /*width: 300px / 900px * 100%*/
+  min-height: 400px;
+  float: left;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+.capaborderradius3:hover {
+  background-color: orange;
+}
+
+/*# sourceMappingURL=HojaEstilo.css.map */
