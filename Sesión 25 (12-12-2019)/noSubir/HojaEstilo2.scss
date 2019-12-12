@@ -1,0 +1,58 @@
+/*Sass sin optimizar*/
+// .contenedorf{
+//     display: flex;
+//     background-color: lightblue;
+//     min-height: 700px;
+//     justify-content: center;
+//     > div{
+//         background-color: pink;
+//         margin: 15px;
+//         padding: 18px;
+//         font-size: 2rem;
+//     }
+// }
+
+// .contenedorfleexcentradoperfecto{
+//     display: flex;
+//     background-color: lightblue;
+//     min-height: 700px;
+//     justify-content: center;
+//     align-items: center;
+//     > div{
+//         background-color: pink;
+//         margin: 15px;
+//         padding: 18px;
+//         font-size: 2rem;
+//     }
+// }
+
+/*Sass optimizado*/
+%contenedor{
+    display: flex;
+    background-color: lightblue;
+    min-height: 700px;
+    justify-content: center;
+}
+
+%hija{
+    background-color: pink;
+    margin: 15px;
+    padding: 18px;
+    font-size: 2rem;
+}
+
+.contenedorf{
+    @extend %contenedor;
+    align-items: flex-start;
+    > div{
+        @extend %hija;
+    }
+}
+
+.contenedorfleexcentradoperfecto{
+    @extend %contenedor;
+    align-items: center;
+    > div{
+        @extend %hija;
+    }
+}
