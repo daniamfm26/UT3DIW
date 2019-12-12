@@ -1,0 +1,18 @@
+.contenedorflex {
+  min-height: 400px;
+  background-color: royalblue;
+  display: flex;
+}
+
+.contenedorflex > div {
+  padding: 20px;
+  margin: 10px;
+  font-size: 1.8rem;
+  background-color: sandybrown;
+}
+
+.contenedorflex {
+  align-items: flex-start;
+}
+
+/*# sourceMappingURL=hojaestilo3.css.map */

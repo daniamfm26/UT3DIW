@@ -1,23 +1,49 @@
-.contenedorflexcentradoperfecto > div, .contenedorflex > div {
+.contenedorflexaligcontent > div, .contenedorflexcentradoperfecto > div, .contenedorflex > div {
   background-color: pink;
   margin: 10px;
   padding: 20px;
   font-size: 1.8rem;
 }
 
-.contenedorflexcentradoperfecto, .contenedorflex {
+.contenedorflexaligcontent, .contenedorflexcentradoperfecto, .contenedorflex {
   display: flex;
   background-color: dodgerblue;
   min-height: 500px;
+  flex-wrap: wrap;
 }
 
 .contenedorflex {
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
 }
 .contenedorflexcentradoperfecto {
   margin-top: 30px;
   align-items: center;
+  /*Para uno*/
   justify-content: center;
+  /*Para varios*/
+}
+.contenedorflexaligcontent {
+  justify-content: center;
+  align-items: center;
+  align-content: flex-end;
+}
+/*Ejemplo baseline, no optimizo codigo*/
+.contenedorflexbaseline {
+  margin-top: 40px;
+  display: flex;
+  height: 200px;
+  align-items: baseline;
+  background-color: DodgerBlue;
 }
 
-/*# sourceMappingURL=hojaestilo.css.map */
+.contenedorflexbaseline > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=HojaEstilo.css.map */

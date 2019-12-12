@@ -1,33 +1,59 @@
-%capahija{
-    background-color:pink;
-    margin: 10px;
-    padding: 20px;
-    font-size: 1.8rem;
+%capahija {
+  background-color: pink;
+  margin: 10px;
+  padding: 20px;
+  font-size: 1.8rem;
 }
 
-%contenedor{
-    display: flex;
-    background-color: dodgerblue;
-    min-height: 500px;
+%contenedor {
+  display: flex;
+  background-color: dodgerblue;
+  min-height: 500px;
+  flex-wrap: wrap;
 }
 
-.contenedorflex{
-    @extend %contenedor;
-    align-items: center;
-    
-    > div{
-        @extend %capahija;
-    }
+.contenedorflex {
+  @extend %contenedor;
+  align-items: flex-start;
+  justify-content: center;
+
+  > div {
+    @extend %capahija;
+  }
 }
-.contenedorflexcentradoperfecto{
-    margin-top:30px ;
-    @extend %contenedor;
-    align-items: center;
-    justify-content: center;
-    > div{
-        @extend %capahija;
-    }
+.contenedorflexcentradoperfecto {
+  margin-top: 30px;
+  @extend %contenedor;
+  align-items: center; /*Para uno*/
+  justify-content: center; /*Para varios*/
+  > div {
+    @extend %capahija;
+  }
 }
 
+.contenedorflexaligcontent {
+  @extend %contenedor;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-end;
+  > div {
+    @extend %capahija;
+  }
+}
 
-
+/*Ejemplo baseline, no optimizo codigo*/
+.contenedorflexbaseline {
+  margin-top: 40px;
+  display: flex;
+  height: 200px;
+  align-items: baseline;
+  background-color: DodgerBlue;
+}
+.contenedorflexbaseline > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}

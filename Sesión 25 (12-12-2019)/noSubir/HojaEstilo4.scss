@@ -1,0 +1,7 @@
+/*Ejemplo1: Cuando el ancho sea mayor de 600px el color será verde*/
+
+@media screen and (min-width: 600px) {
+  body {
+    background-color: lightgreen;
+  }
+}

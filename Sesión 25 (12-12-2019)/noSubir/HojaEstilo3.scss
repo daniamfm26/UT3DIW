@@ -1,0 +1,19 @@
+%contenedor{
+    min-height: 400px;
+    background-color: royalblue;
+    display: flex;
+}
+
+%capahija{
+    padding: 20px;
+    margin:10px;
+    font-size: 1.8rem;
+    background-color: sandybrown;
+}
+.contenedorflex{
+    @extend %contenedor;
+    align-items: flex-start;
+    > div{
+        @extend %capahija;
+    }
+}
