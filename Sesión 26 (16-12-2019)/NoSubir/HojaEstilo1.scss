@@ -1,0 +1,64 @@
+.contenedorflex {
+  display: flex;
+  width: 500px;
+  background-color: dodgerblue;
+  padding: 20px;
+  min-height: 400px;
+  > .elementohijo1{
+    background-color: pink;
+    padding: 10px;
+    align-self: flex-end;
+    } 
+  > .elementohijo2{
+    background-color: pink;
+    padding: 10px;
+    align-self: flex-start;
+    } 
+  > .elementohijo3{
+    background-color: pink;
+    padding: 10px;
+    align-self: center;
+    } 
+  > .elemento1 {
+    // flex-basis: 200px;/*Si lo fijas en un ancho determinado
+    // de ahi no va a decrecer.Si permite que crezca*/
+    flex-basis: auto;
+    flex-grow: 3;
+    background-color: pink;
+  }
+  > .elemento2{
+    flex-basis: auto;
+    flex-grow: 2;
+    background-color: pink;
+    }
+  > .elemento3{
+    flex-basis: auto;
+    flex-grow: 2;
+    background-color: pink;
+    }  
+  
+}
+
+.contenedorflex2{
+  display: flex;
+  background-color: dodgerblue;
+  padding: 20px;
+  > .elemento1{
+    display: flex;/*No hereda la propiedad
+    flex de su contenedor*/
+    background-color: lightblue;
+    padding: 10px;
+      > .elemento11{
+        background-color: pink;
+        padding: 10px;
+      }
+      > .elemento12{
+        background-color: pink;
+        padding: 10px;
+      }
+  }
+  > .elemento2{
+    background-color: pink;
+    padding: 10px;
+  }
+}

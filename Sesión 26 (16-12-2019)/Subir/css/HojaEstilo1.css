@@ -1,0 +1,64 @@
+.contenedorflex {
+  display: flex;
+  width: 500px;
+  background-color: dodgerblue;
+  padding: 20px;
+  min-height: 400px;
+}
+.contenedorflex > .elementohijo1 {
+  background-color: pink;
+  padding: 10px;
+  align-self: flex-end;
+}
+.contenedorflex > .elementohijo2 {
+  background-color: pink;
+  padding: 10px;
+  align-self: flex-start;
+}
+.contenedorflex > .elementohijo3 {
+  background-color: pink;
+  padding: 10px;
+  align-self: center;
+}
+.contenedorflex > .elemento1 {
+  flex-basis: auto;
+  flex-grow: 3;
+  background-color: pink;
+}
+.contenedorflex > .elemento2 {
+  flex-basis: auto;
+  flex-grow: 2;
+  background-color: pink;
+}
+.contenedorflex > .elemento3 {
+  flex-basis: auto;
+  flex-grow: 2;
+  background-color: pink;
+}
+
+.contenedorflex2 {
+  display: flex;
+  background-color: dodgerblue;
+  padding: 20px;
+}
+.contenedorflex2 > .elemento1 {
+  display: flex;
+  /*No hereda la propiedad
+  flex de su contenedor*/
+  background-color: lightblue;
+  padding: 10px;
+}
+.contenedorflex2 > .elemento1 > .elemento11 {
+  background-color: pink;
+  padding: 10px;
+}
+.contenedorflex2 > .elemento1 > .elemento12 {
+  background-color: pink;
+  padding: 10px;
+}
+.contenedorflex2 > .elemento2 {
+  background-color: pink;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=HojaEstilo1.css.map */
